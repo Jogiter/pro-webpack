@@ -1,0 +1,61 @@
+{
+  "name": "jogiter",
+  "version": "1.0.0",
+  "description": "jogiter cli",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "format": "eslint --ext .js,.vue ./ --fix",
+    "del": "rimraf dist/",
+    "dev": "cross-env NODE_ENV=dev webpack-dev-server",
+    "build": "yarn run del && cross-env NODE_ENV=production webpack"
+  },
+  "keywords": [
+    "jogiter"
+  ],
+  "author": "jogiter",
+  "license": "MIT",
+  "devDependencies": {
+    "babel": "^6.23.0",
+    "babel-core": "^6.26.0",
+    "babel-eslint": "^8.2.2",
+    "babel-loader": "^7.1.3",
+    "babel-preset-env": "^1.6.1",
+    "cross-env": "^5.1.3",
+    "css-loader": "^0.28.9",
+    "cssnano": "^3.10.0",
+    "eslint": "^4.18.2",
+    "eslint-config-standard": "^11.0.0-beta.0",
+    "eslint-friendly-formatter": "^3.0.0",
+    "eslint-loader": "^1.9.0",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-node": "^6.0.0",
+    "eslint-plugin-promise": "^3.6.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "eslint-plugin-vue": "^4.3.0",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "file-loader": "^1.1.6",
+    "friendly-errors-webpack-plugin": "^1.6.1",
+    "html-loader": "^0.5.5",
+    "html-webpack-plugin": "^2.30.1",
+    "optimize-css-assets-webpack-plugin": "^3.2.0",
+    "rimraf": "^2.6.2",
+    "style-loader": "^0.20.1",
+    "uglifyjs-webpack-plugin": "^1.1.8",
+    "url-loader": "^0.6.2",
+    "vue-loader": "^14.1.1",
+    "vue-template-compiler": "^2.5.13",
+    "webpack": "^3.10.0",
+    "webpack-dev-server": "^2.11.1",
+    "webpack-jarvis": "^0.3.0",
+    "webpack-merge": "^4.1.1"
+  },
+  "dependencies": {
+    "dateformat": "^3.0.3",
+    "js-cookie": "^2.2.0",
+    "jsonp": "^0.2.1",
+    "vue": "^2.5.13",
+    "vue-resource": "^1.3.5",
+    "vue-router": "^3.0.1"
+  }
+}
